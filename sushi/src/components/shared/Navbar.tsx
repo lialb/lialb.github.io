@@ -47,7 +47,7 @@ export default function Navbar(): React.ReactElement {
           to="projects"
           spy={true}
           smooth={true}
-          offset={-5}
+          offset={-50}
           duration={500}
         >
           <strong>projects</strong>
@@ -60,7 +60,7 @@ export default function Navbar(): React.ReactElement {
           to="skills"
           spy={true}
           smooth={true}
-          offset={-5}
+          offset={0}
           duration={500}
         >
           <strong>skills</strong>
@@ -73,7 +73,7 @@ export default function Navbar(): React.ReactElement {
           to="more"
           spy={true}
           smooth={true}
-          offset={15}
+          offset={0}
           duration={500}
         >
           <strong>more</strong>
