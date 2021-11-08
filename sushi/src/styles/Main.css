@@ -1,0 +1,135 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.link {
+  text-decoration: none;
+}
+
+#facebook {
+  border-bottom: 2px solid var(--facebook);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#facebook:hover {
+  background-color: var(--facebook-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--facebook);
+}
+
+#tableau {
+  border-bottom: 2px solid var(--tableau);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#tableau:hover {
+  background-color: var(--tableau-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--tableau);
+}
+
+#salesforce {
+  border-bottom: 2px solid var(--salesforce);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#salesforce:hover {
+  background-color: var(--salesforce-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--salesforce);
+}
+
+#motorola {
+  border-bottom: 2px solid var(--motorola);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#motorola:hover {
+  background-color: var(--motorola-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--motorola);
+}
+
+#caterpillar {
+  border-bottom: 2px solid var(--caterpillar);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#caterpillar:hover {
+  background-color: var(--caterpillar-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--caterpillar);
+}
+
+#ameren {
+  border-bottom: 2px solid var(--ameren);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#ameren:hover {
+  background-color: var(--ameren-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--ameren);
+}
+
+#uiuc-cs {
+  border-bottom: 2px solid var(--uiuc-orange);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#uiuc-cs:hover {
+  background-color: var(--uiuc-orange-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--uiuc-orange);
+}
+
+.navbar-root {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  z-index: 1;
+}
+
+.navbar-right-container {
+  margin-left: auto;
+}
+
+.navbar-right-container > * {
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.navbar-right-container > *:first-child {
+  margin-left: 0px;
+}
+
+hr {
+  width: 70%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+}

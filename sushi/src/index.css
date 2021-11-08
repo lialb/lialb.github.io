@@ -1,0 +1,38 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,700");
+
+body {
+  margin: 0;
+  font-family: Poppins, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --main-background: #172a45;
+  --secondary: #8892b0;
+  --white: ghostwhite;
+  --light-secondary: rgb(136, 146, 176);
+  --icon-main: rgb(23, 42, 69);
+  --icon-secondary: #c0c0c0;
+  --uiuc-orange: #e84a27;
+  --uiuc-orange-secondary: rgba(232, 74, 39, 0.15);
+
+  /* Company colors */
+  --facebook: #39579c;
+  --facebook-secondary: rgba(57, 87, 156, 0.15);
+  --salesforce: #17a0db;
+  --salesforce-secondary: rgba(23, 160, 219, 0.15);
+  --tableau: #4e79a7;
+  --tableau-secondary: rgba(78, 121, 167, 0.15);
+  --motorola: black;
+  --motorola-secondary: rgba(0, 0, 0, 0.15);
+  --caterpillar: #d5b60a;
+  --caterpillar-secondary: rgba(213, 182, 10, 0.15);
+  --ameren: #35962b;
+  --ameren-secondary: rgba(53, 150, 43, 0.15);
+}

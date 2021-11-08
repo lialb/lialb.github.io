@@ -1,0 +1,22 @@
+.boy-and-cat-drawing {
+  min-width: 375px;
+  width: 25%;
+}
+
+.home-root {
+  height: 100%;
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-title {
+  color: var(--icon-main);
+  width: 100%;
+  text-align: center;
+  font-size: 60vw;
+  font-size: calc(12px + 1vw);
+}

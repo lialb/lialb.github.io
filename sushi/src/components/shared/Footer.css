@@ -1,0 +1,10 @@
+.footer-root {
+  background-color: var(--icon-main);
+  text-align: center;
+  padding-bottom: 0.05%;
+}
+
+.credit {
+  color: var(--light-secondary);
+  margin-top: 0;
+}
