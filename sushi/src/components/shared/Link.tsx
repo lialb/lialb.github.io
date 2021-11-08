@@ -19,7 +19,7 @@ export default function Link({
       rel="noopener noreferrer"
       target="_blank"
     >
-      {children}
+      <strong>{children}</strong>
     </a>
   );
 }

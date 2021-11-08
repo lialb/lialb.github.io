@@ -1,0 +1,32 @@
+.more-title {
+  padding-bottom: 1%;
+  text-align: center;
+}
+
+.more-root {
+  padding-top: 4%;
+  text-align: center;
+}
+
+.more-facts {
+  text-align: center;
+}
+
+.cat-picture {
+  border-radius: 50%;
+  width: 15%;
+}
+
+@media (max-width: 800px) {
+  .cat-picture {
+    width: 50%;
+  }
+}
+
+.counter-text {
+  margin-top: 0;
+}
+
+.counter {
+  padding: 0;
+}

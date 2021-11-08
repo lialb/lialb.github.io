@@ -1,0 +1,29 @@
+.social-icons {
+  z-index: 1;
+}
+
+.social-icon-light {
+  color: var(--white) !important;
+}
+
+.social-icon-light:hover {
+  color: var(--light-secondary) !important;
+}
+
+.social-icon-dark {
+  color: var(--icon-main) !important;
+}
+
+.social-icon-dark:hover {
+  color: var(--icon-secondary) !important;
+}
+
+#github {
+  padding-left: 20px;
+  padding-right: 10px
+}
+
+#linkedin {
+  padding-left: 10px;
+  padding-right: 20px;
+}

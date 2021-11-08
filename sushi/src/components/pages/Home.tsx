@@ -3,16 +3,16 @@ import Drawing from "../../assets/boy-and-cat.jpg";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import "./home.css";
-import "../../styles/icons.css";
+import "./Home.css";
+import "../../styles/Icons.css";
 
 export default function Home(): React.ReactElement {
   return (
     <div className="home-root">
       <img className="boy-and-cat-drawing" src={Drawing} />
       <p className="home-title">hello, i am albert</p>
+      <br />
       <div className="social-icons">
-        <br />
         <a href="mailto:albert.yiliang@gmail.com">
           <FontAwesomeIcon
             icon="envelope"
