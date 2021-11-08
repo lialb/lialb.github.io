@@ -24,7 +24,7 @@ export default function More(): React.ReactElement {
         <p>I work hard so my cat (Samwise) can have a better life</p>
         <img className="cat-picture" src={Cat} width="30%" alt="Samwise Cat" />
         <p className="counter-text">
-          This page has been viewed at least {" "}
+          This page has been viewed at least {" "} &nbsp;
           <img
             src="https://stuff.mit.edu/cgi/counter/albearli"
             alt="counter"

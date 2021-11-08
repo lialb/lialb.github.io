@@ -3,7 +3,7 @@ import React from "react";
 type Props = {
   cssID?: string;
   children: React.ReactNode;
-  href: string;
+  href?: string;
 };
 
 export default function Link({
@@ -11,6 +11,10 @@ export default function Link({
   cssID,
   href,
 }: Props): React.ReactElement {
+  if (href == null) {
+    return <strong id={cssID}>{children}</strong>;
+  }
+
   return (
     <a
       className="link"

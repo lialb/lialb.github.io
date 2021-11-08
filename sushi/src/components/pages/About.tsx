@@ -90,7 +90,7 @@ export default function About(): React.ReactElement {
               <Link href="https://ameren.com" cssID="ameren">
                 Ameren
               </Link>
-              ⚡ redesigning internal portals for PMs, Analysts, and executives.
+              ⚡ redesigning internal portals for PMs, Analysts, and executives
             </p>
           </li>
         </ul>

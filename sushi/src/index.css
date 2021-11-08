@@ -24,15 +24,26 @@ code {
 
   /* Company colors */
   --facebook: #39579c;
-  --facebook-secondary: rgba(57, 87, 156, 0.15);
+  --facebook-highlight: rgba(57, 87, 156, 0.15);
   --salesforce: #17a0db;
-  --salesforce-secondary: rgba(23, 160, 219, 0.15);
+  --salesforce-highlight: rgba(23, 160, 219, 0.15);
   --tableau: #4e79a7;
-  --tableau-secondary: rgba(78, 121, 167, 0.15);
+  --tableau-highlight: rgba(78, 121, 167, 0.15);
   --motorola: black;
-  --motorola-secondary: rgba(0, 0, 0, 0.15);
+  --motorola-highlight: rgba(0, 0, 0, 0.15);
   --caterpillar: #d5b60a;
-  --caterpillar-secondary: rgba(213, 182, 10, 0.15);
+  --caterpillar-highlight: rgba(213, 182, 10, 0.15);
   --ameren: #35962b;
-  --ameren-secondary: rgba(53, 150, 43, 0.15);
+  --ameren-highlight: rgba(53, 150, 43, 0.15);
+
+  /* Pastels */
+  --pastel-primary: #DEFCF9;
+  --pastel-primary-highlight: rgba(222, 252, 249, 0.15);
+  --pastel-secondary: #CADEFC;
+  --pastel-secondary-highlight: rgba(202, 222, 252, 0.15);
+  --pastel-tertiary: #C3BEF0;
+  --pastel-teritary-highlight: rgba(195, 190, 240, 0.15);
+  --pastel-quaternary: #CCA8E9;
+  --pastel-quaternary-highlight: rgba(204, 168, 233, 0.15);
+
 }

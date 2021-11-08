@@ -1,35 +1,12 @@
-import React, { useEffect, useState } from "react";
-
-import { Link } from "react-scroll";
+import React from "react";
+import Link from "./Link";
+import { Link as ScrollLink } from "react-scroll";
 
 export default function Navbar(): React.ReactElement {
-  const [atTop, setAtTop] = useState(true);
-
-  const scrollEvent = () => {
-    if (window.pageYOffset <= 500) {
-      setAtTop(true);
-    } else if (atTop) {
-      setAtTop(false);
-    }
-  };
-
-  useEffect(() => {
-    window.addEventListener("scroll", scrollEvent);
-    return () => {
-      window.removeEventListener("scroll", scrollEvent);
-    };
-  }, []);
-
   return (
-    <div
-      className="navbar-root"
-      style={{ background: atTop ? "none" : "var(--main-background)" }}
-    >
+    <div className="navbar-root">
       <div className="navbar-right-container">
-        <Link
-          style={{
-            color: atTop ? "var(--main-background)" : "var(--light-secondary)",
-          }}
+        <ScrollLink
           activeClass="active"
           to="about"
           spy={true}
@@ -37,12 +14,9 @@ export default function Navbar(): React.ReactElement {
           offset={0}
           duration={500}
         >
-          <strong>about</strong>
-        </Link>
-        <Link
-          style={{
-            color: atTop ? "var(--main-background)" : "var(--light-secondary)",
-          }}
+          <Link cssID="dark-link">about</Link>
+        </ScrollLink>
+        <ScrollLink
           activeClass="active"
           to="projects"
           spy={true}
@@ -50,12 +24,9 @@ export default function Navbar(): React.ReactElement {
           offset={-50}
           duration={500}
         >
-          <strong>projects</strong>
-        </Link>
-        <Link
-          style={{
-            color: atTop ? "var(--main-background)" : "var(--light-secondary)",
-          }}
+          <Link cssID="dark-link">projects</Link>
+        </ScrollLink>
+        <ScrollLink
           activeClass="active"
           to="skills"
           spy={true}
@@ -63,12 +34,9 @@ export default function Navbar(): React.ReactElement {
           offset={0}
           duration={500}
         >
-          <strong>skills</strong>
-        </Link>
-        <Link
-          style={{
-            color: atTop ? "var(--main-background)" : "var(--light-secondary)",
-          }}
+          <Link cssID="dark-link">skills</Link>
+        </ScrollLink>
+        <ScrollLink
           activeClass="active"
           to="more"
           spy={true}
@@ -76,23 +44,11 @@ export default function Navbar(): React.ReactElement {
           offset={0}
           duration={500}
         >
-          <strong>more</strong>
+          <Link cssID="dark-link">more</Link>
+        </ScrollLink>
+        <Link href="./Albert-Li-Resume.pdf" cssID="resume-link-top">
+          resume
         </Link>
-        <a
-          href="./Albert-Li-Resume.pdf"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <strong
-            style={{
-              color: atTop
-                ? "var(--main-background)"
-                : "var(--light-secondary)",
-            }}
-          >
-            resume
-          </strong>
-        </a>
       </div>
     </div>
   );

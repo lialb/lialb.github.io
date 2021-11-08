@@ -7,6 +7,107 @@ a {
   text-decoration: none;
 }
 
+.navbar-root {
+  left: 0;
+  right: 0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  z-index: 1;
+}
+
+.navbar-right-container {
+  margin-left: auto;
+}
+
+.navbar-right-container > * {
+  margin-left: 12.5px;
+  cursor: pointer;
+}
+
+.navbar-right-container > *:first-child {
+  margin-left: 0px;
+}
+
+hr {
+  width: 70%;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1%;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#dark-link {
+  border-bottom: 2px solid var(--icon-main);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#dark-link:hover {
+  background-color: var(--icon-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--icon-main);
+}
+
+#primary-link {
+  border-bottom: 2px solid var(--pastel-primary);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#primary-link:hover {
+  background-color: var(--pastel-primary-highlight);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--pastel-primary);
+}
+
+#secondary-link {
+  border-bottom: 2px solid var(--pastel-secondary);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#secondary-link:hover {
+  background-color: var(--pastel-secondary-highlight);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--pastel-secondary);
+}
+
+#tertiary-link {
+  border-bottom: 2px solid var(--pastel-tertiary);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#tertiary-link:hover {
+  background-color: var(--pastel-tertiary-highlight);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--pastel-tertiary);
+}
+
+#quaternary-link {
+  border-bottom: 2px solid var(--pastel-quaternary);
+  padding-left: 2px;
+  padding-right: 2px;
+}
+
+#quaternary-link:hover {
+  background-color: var(--pastel-quaternary-highlight);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--pastel-quaternary);
+}
+
 #facebook {
   border-bottom: 2px solid var(--facebook);
   padding-left: 2px;
@@ -14,7 +115,7 @@ a {
 }
 
 #facebook:hover {
-  background-color: var(--facebook-secondary);
+  background-color: var(--facebook-highlight);
   border-bottom: none;
   border-radius: 4px;
   color: var(--facebook);
@@ -27,7 +128,7 @@ a {
 }
 
 #tableau:hover {
-  background-color: var(--tableau-secondary);
+  background-color: var(--tableau-highlight);
   border-bottom: none;
   border-radius: 4px;
   color: var(--tableau);
@@ -40,7 +141,7 @@ a {
 }
 
 #salesforce:hover {
-  background-color: var(--salesforce-secondary);
+  background-color: var(--salesforce-highlight);
   border-bottom: none;
   border-radius: 4px;
   color: var(--salesforce);
@@ -53,7 +154,7 @@ a {
 }
 
 #motorola:hover {
-  background-color: var(--motorola-secondary);
+  background-color: var(--motorola-highlight);
   border-bottom: none;
   border-radius: 4px;
   color: var(--motorola);
@@ -66,7 +167,7 @@ a {
 }
 
 #caterpillar:hover {
-  background-color: var(--caterpillar-secondary);
+  background-color: var(--caterpillar-highlight);
   border-bottom: none;
   border-radius: 4px;
   color: var(--caterpillar);
@@ -79,7 +180,7 @@ a {
 }
 
 #ameren:hover {
-  background-color: var(--ameren-secondary);
+  background-color: var(--ameren-highlight);
   border-bottom: none;
   border-radius: 4px;
   color: var(--ameren);
@@ -98,38 +199,28 @@ a {
   color: var(--uiuc-orange);
 }
 
-.navbar-root {
-  left: 0;
-  right: 0;
-  top: 0;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 1rem;
-  z-index: 1;
+#resume-link {
+  border-bottom: 2px solid var(--uiuc-orange);
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-.navbar-right-container {
-  margin-left: auto;
+#resume-link:hover {
+  background-color: var(--uiuc-orange-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--uiuc-orange);
 }
 
-.navbar-right-container > * {
-  margin-left: 10px;
-  cursor: pointer;
+#resume-link-top {
+  border-bottom: 2px solid var(--uiuc-orange);
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
-.navbar-right-container > *:first-child {
-  margin-left: 0px;
-}
-
-hr {
-  width: 70%;
-}
-
-.flex-container {
-  display: flex;
-  justify-content: center;
-  padding-top: 1%;
-  width: 100%;
-  flex-wrap: wrap;
+#resume-link-top:hover {
+  background-color: var(--uiuc-orange-secondary);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--uiuc-orange);
 }
