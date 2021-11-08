@@ -5,6 +5,8 @@ a {
 
 .link {
   text-decoration: none;
+  padding-left: 2px;
+  padding-right: 2px;
 }
 
 .navbar-root {
@@ -43,6 +45,48 @@ hr {
   flex-wrap: wrap;
 }
 
+.pill {
+  border-radius: 4px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+  padding: 1px 4px;
+}
+
+#Python {
+  background-color: var(--facebook-highlight);
+  color: var(--facebook);
+}
+
+#Angular {
+  background-color: rgba(181, 46, 49, 0.15);
+  color: rgb(181, 46, 49);
+}
+
+#D3 {
+  background-color: var(--caterpillar-highlight);
+  color: var(--caterpillar);
+}
+
+#Flutter {
+  background-color: var(--tableau-highlight);
+  color: var(--tableau);
+}
+
+#Go {
+  background-color: var(--salesforce-highlight);
+  color: var(--salesforce);
+}
+
+#Neo4j {
+  background-color: var(--ameren-highlight);
+  color: var(--ameren);
+}
+
+#MySQL {
+  background-color: var(--motorola-highlight);
+  color: var(--motorola);
+}
+
 #dark-link {
   border-bottom: 2px solid var(--icon-main);
   padding-left: 2px;
@@ -58,8 +102,6 @@ hr {
 
 #primary-link {
   border-bottom: 2px solid var(--pastel-primary);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #primary-link:hover {
@@ -71,8 +113,6 @@ hr {
 
 #secondary-link {
   border-bottom: 2px solid var(--pastel-secondary);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #secondary-link:hover {
@@ -84,8 +124,6 @@ hr {
 
 #tertiary-link {
   border-bottom: 2px solid var(--pastel-tertiary);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #tertiary-link:hover {
@@ -97,21 +135,15 @@ hr {
 
 #quaternary-link {
   border-bottom: 2px solid var(--pastel-quaternary);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #quaternary-link:hover {
   background-color: var(--pastel-quaternary-highlight);
-  border-bottom: none;
-  border-radius: 4px;
   color: var(--pastel-quaternary);
 }
 
 #facebook {
   border-bottom: 2px solid var(--facebook);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #facebook:hover {
@@ -123,8 +155,6 @@ hr {
 
 #tableau {
   border-bottom: 2px solid var(--tableau);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #tableau:hover {
@@ -136,8 +166,6 @@ hr {
 
 #salesforce {
   border-bottom: 2px solid var(--salesforce);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #salesforce:hover {
@@ -149,8 +177,6 @@ hr {
 
 #motorola {
   border-bottom: 2px solid var(--motorola);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #motorola:hover {
@@ -162,8 +188,6 @@ hr {
 
 #caterpillar {
   border-bottom: 2px solid var(--caterpillar);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #caterpillar:hover {
@@ -175,8 +199,6 @@ hr {
 
 #ameren {
   border-bottom: 2px solid var(--ameren);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #ameren:hover {
@@ -188,8 +210,6 @@ hr {
 
 #uiuc-cs {
   border-bottom: 2px solid var(--uiuc-orange);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #uiuc-cs:hover {
@@ -201,24 +221,9 @@ hr {
 
 #resume-link {
   border-bottom: 2px solid var(--uiuc-orange);
-  padding-left: 2px;
-  padding-right: 2px;
 }
 
 #resume-link:hover {
-  background-color: var(--uiuc-orange-secondary);
-  border-bottom: none;
-  border-radius: 4px;
-  color: var(--uiuc-orange);
-}
-
-#resume-link-top {
-  border-bottom: 2px solid var(--uiuc-orange);
-  padding-left: 2px;
-  padding-right: 2px;
-}
-
-#resume-link-top:hover {
   background-color: var(--uiuc-orange-secondary);
   border-bottom: none;
   border-radius: 4px;

@@ -46,7 +46,7 @@ export default function Navbar(): React.ReactElement {
         >
           <Link cssID="dark-link">more</Link>
         </ScrollLink>
-        <Link href="./Albert-Li-Resume.pdf" cssID="resume-link-top">
+        <Link href="./Albert-Li-Resume.pdf" cssID="resume-link">
           resume
         </Link>
       </div>

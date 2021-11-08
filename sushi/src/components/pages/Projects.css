@@ -23,6 +23,10 @@
   margin: 1% 2.5%;
 }
 
+.project-title {
+  margin: -1% 0; 
+}
+
 .project-picture {
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
@@ -39,4 +43,9 @@
   .card {
     width: 13rem;
   }
+}
+
+.pills-container {
+  display: flex;
+  flex-wrap: wrap;
 }
