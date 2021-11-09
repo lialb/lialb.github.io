@@ -1,5 +1,7 @@
 import React from "react";
 import SkillIcon from "../shared/SkillIcon";
+import Title from '../shared/Title';
+
 import Python from "../../assets/techIcons/python.png";
 import CPP from "../../assets/techIcons/cpp.png";
 import JavaScript from "../../assets/techIcons/javascript.png";
@@ -22,7 +24,7 @@ export default function Skills(): React.ReactElement {
   return (
     <div className="skills-root">
       <div className="centered">
-        <h1>Stuff I've worked with</h1>
+        <Title>Stuff I've worked with</Title>
       </div>
       <div className="flex-container">
         <h1 className="tech-title">Languages:</h1>

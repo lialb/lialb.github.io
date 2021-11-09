@@ -3,6 +3,10 @@ a {
   color: black;
 }
 
+.title-root {
+  padding-top: 5%;
+}
+
 .link {
   text-decoration: none;
   padding-left: 2px;

@@ -2,13 +2,16 @@ import React from "react";
 import Tangram from "../../assets/tangram.png";
 import UIUCDiversity from "../../assets/uiuc-diversity.png";
 import Pill from "../shared/Pill";
+import Title from "../shared/Title";
 
 import "./Projects.css";
 
 export default function Projects(): React.ReactElement {
   return (
     <div className="projects-root">
-      <h1 className="centered">Some Projects</h1>
+      <div className="centered">
+        <Title>Some Projects</Title>
+      </div>
       <div className="flex-container">
         <Project
           desc="15 years of racial demographics of every major and college at the University of Illinois"
