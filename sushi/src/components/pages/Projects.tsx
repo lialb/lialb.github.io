@@ -54,7 +54,7 @@ function Project({
           <img src={image} alt="project image" className="project-picture" />
           <div className="card-container">
             <h3 className="project-title">{name}</h3>
-            <p>{desc}</p>
+            <p className="project-description">{desc}</p>
             <div className="pills-container">
               {tech.map((item) => {
                 return <Pill label={item} />;
