@@ -1,6 +1,6 @@
 import React from "react";
 import Tangram from "../../assets/tangram.png";
-import UIUCDiversity from "../../assets/uiuc-diversity.png";
+import UIUCDiversity from "../../assets/I.png";
 import Pill from "../shared/Pill";
 import Title from "../shared/Title";
 

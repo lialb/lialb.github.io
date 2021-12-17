@@ -41,14 +41,15 @@ export default function About(): React.ReactElement {
           I'm a senior at UIUC. I love creating impactful things. As a student,
           I'm interested in distributed systems, UI design, and security.
         </p>
-        <p>In the past, I've worked at:</p>
+        <p>Formerly, I've worked at:</p>
         <ul>
           <li>
             <p>
               <Link href="https://meta.com" cssID="facebook">
                 Facebook
               </Link>
-              📚 on the Stories and Reels team creating new products
+              📚 on the Stories and Reels team creating new products (launching
+              globally soon!)
             </p>
           </li>
           <li>
@@ -60,8 +61,13 @@ export default function About(): React.ReactElement {
               <Link href="https://tableau.com" cssID="tableau">
                 Tableau
               </Link>
-              📊 on the Runtime and VizPipeline team building out API infra and
-              core features
+              📊 on the Runtime and VizPipeline team building out the{" "}
+              <Link
+                href="https://tableau.github.io/extensions-api/docs/trex_tableau_viz.html"
+                cssID="tableau"
+              >
+                Viz API
+              </Link>
             </p>
           </li>
           <li>
@@ -73,7 +79,7 @@ export default function About(): React.ReactElement {
               real time
             </p>
             <ul>
-              <li>Spring 2021: Smart Insights 💡 + Engineering Lead</li>
+              <li>Spring 2021: Smart Insights team 💡 + Engineering Lead</li>
             </ul>
           </li>
           <li>

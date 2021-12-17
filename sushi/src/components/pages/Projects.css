@@ -32,7 +32,7 @@
   border-top-right-radius: 5px;
   width: 18rem;
   height: 18rem;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 
 @media (max-width: 559px) {
