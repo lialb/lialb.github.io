@@ -51,7 +51,7 @@ export default function Footer(): React.ReactElement {
           />
         </a>
       </div>
-      <p className="credit">Made by Albert ✨ 2020 - 2021</p>
+      <p className="credit">Made by Albert ✨ 2020 - 2022</p>
     </div>
   );
 }

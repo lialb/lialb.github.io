@@ -41,14 +41,30 @@ export default function About(): React.ReactElement {
           I'm a senior at UIUC. I love creating impactful things. As a student,
           I'm interested in distributed systems, UI design, and security.
         </p>
+        <p>
+          I'll be joining{" "}
+          <Link href="https://stripe.com" cssID="stripe">
+            Stripe
+          </Link>{" "}
+          as a Software Engineer later this year.
+        </p>
         <p>Formerly, I've worked at:</p>
         <ul>
           <li>
             <p>
+              <Link href="https://airkit.com" cssID="airkit">
+                Airkit
+              </Link>{" "}
+              (backed by EQT Ventures, Accel, Salesforce Ventures, and others)
+              building internal tooling and infra
+            </p>
+          </li>
+          <li>
+            <p>
               <Link href="https://meta.com" cssID="facebook">
                 Facebook
-              </Link>
-              📚 on the Stories and Reels team creating new products (launching
+              </Link>{" "}
+              on the Stories and Reels team creating new products (launching
               globally soon!)
             </p>
           </li>
@@ -60,8 +76,8 @@ export default function About(): React.ReactElement {
               /
               <Link href="https://tableau.com" cssID="tableau">
                 Tableau
-              </Link>
-              📊 on the Runtime and VizPipeline team building out the{" "}
+              </Link>{" "}
+              on the Runtime and VizPipeline team building out the Tableau{" "}
               <Link
                 href="https://tableau.github.io/extensions-api/docs/trex_tableau_viz.html"
                 cssID="tableau"
@@ -74,29 +90,26 @@ export default function About(): React.ReactElement {
             <p>
               <Link href="https://motorolasolutions.com" cssID="motorola">
                 Motorola
-              </Link>
-              📻 developing cloud backend services monitoring radio systems in
-              real time
+              </Link>{" "}
+              developing cloud backend services monitoring radio systems in real
+              time
             </p>
-            <ul>
-              <li>Spring 2021: Smart Insights team 💡 + Engineering Lead</li>
-            </ul>
           </li>
           <li>
             <p>
               <Link href="https://caterpillar.com" cssID="caterpillar">
                 Caterpillar
-              </Link>
-              🚜 creating a data extraction web platform reducing data lookup
-              time for 1000+ engineers, serving 20k+ requests daily
+              </Link>{" "}
+              creating a data extraction web platform reducing data lookup time
+              for 1000+ engineers, serving 20k+ requests daily
             </p>
           </li>
           <li>
             <p>
               <Link href="https://ameren.com" cssID="ameren">
                 Ameren
-              </Link>
-              ⚡ redesigning internal portals for PMs, Analysts, and executives
+              </Link>{" "}
+              redesigning internal portals for PMs, Analysts, and executives
             </p>
           </li>
         </ul>

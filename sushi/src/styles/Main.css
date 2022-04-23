@@ -3,6 +3,10 @@ a {
   color: black;
 }
 
+li {
+  margin-bottom: 25px;
+}
+
 .title-root {
   padding-top: 5%;
 }
@@ -143,6 +147,28 @@ hr {
 #quaternary-link:hover {
   background-color: var(--pastel-quaternary-highlight);
   color: var(--pastel-quaternary);
+}
+
+#stripe {
+  border-bottom: 2px solid var(--stripe);
+}
+
+#stripe:hover {
+  background-color: var(--stripe-highlight);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--stripe);
+}
+
+#airkit {
+  border-bottom: 2px solid var(--airkit);
+}
+
+#airkit:hover {
+  background-color: var(--airkit-highlight);
+  border-bottom: none;
+  border-radius: 4px;
+  color: var(--airkit);
 }
 
 #facebook {
