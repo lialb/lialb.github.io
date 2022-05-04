@@ -9,6 +9,10 @@ img {
   padding-bottom: 2%;
 }
 
+hr {
+  width: 60%;
+}
+
 .profile-picture {
   border-radius: 50%;
   width: 25%;
@@ -81,9 +85,9 @@ img {
 }
 
 .about-text-container {
+  padding-left: 22.5%;
+  padding-right: 22.5%;
   text-align: left;
-  padding-left: 15%;
-  padding-right: 15%;
 }
 
 .flex-container {

@@ -39,7 +39,8 @@ export default function About(): React.ReactElement {
       <div className="centered about-text-container">
         <p>
           I'm a senior at UIUC. I love creating impactful things. As a student,
-          I'm interested in distributed systems, UI design, and security.
+          I'm interested broadly in systems and security. My experience has been
+          around the whole stack, ranging from product to infra.
         </p>
         <p>
           I'll be joining{" "}
@@ -91,7 +92,7 @@ export default function About(): React.ReactElement {
               <Link href="https://motorolasolutions.com" cssID="motorola">
                 Motorola
               </Link>{" "}
-              developing cloud backend services monitoring radio systems in real
+              developing cloud backend services and products monitoring radio systems in real
               time
             </p>
           </li>
@@ -100,8 +101,7 @@ export default function About(): React.ReactElement {
               <Link href="https://caterpillar.com" cssID="caterpillar">
                 Caterpillar
               </Link>{" "}
-              creating a data extraction web platform reducing data lookup time
-              for 1000+ engineers, serving 20k+ requests daily
+              creating a data extraction web platform for 1000s of engineers
             </p>
           </li>
           <li>
