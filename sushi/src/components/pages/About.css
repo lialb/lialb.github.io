@@ -39,6 +39,11 @@ hr {
   transform: translateY(-50%);
 }
 
+.about-text-container {
+  padding-left: 22.5%;
+  padding-right: 22.5%;
+}
+
 @media (max-width: 630px) {
   .picture {
     width: 50%;
@@ -62,6 +67,15 @@ hr {
     padding-left: 15%;
     padding-right: 15%;
   }
+
+  .about-text-container {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+  }
+
+  hr {
+    width: 75%;
+  }
 }
 
 @media (max-width: 1000px) {
@@ -72,7 +86,7 @@ hr {
 
 @media (max-width: 800px) {
   .profile-picture {
-    width: 50%;
+    width: 60%;
   }
 
   p {
@@ -85,8 +99,6 @@ hr {
 }
 
 .about-text-container {
-  padding-left: 22.5%;
-  padding-right: 22.5%;
   text-align: left;
 }
 
