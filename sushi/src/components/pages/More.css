@@ -1,4 +1,5 @@
 .more-root {
+  background-color: #f2f2f2;
   text-align: center;
 }
 
@@ -15,4 +16,9 @@
 
 .counter {
   padding: 0;
+}
+
+.counter-text {
+  margin-bottom: 0;
+  padding-bottom: 2%;
 }

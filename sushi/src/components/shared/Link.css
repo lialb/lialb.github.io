@@ -1,0 +1,14 @@
+.link:hover .tooltip {
+  display: block;
+}
+
+.tooltip {
+  background: #c8c8c8;
+  color: black;
+  display: none;
+  font-size: 14px;
+  padding: 4px;
+  position: absolute;
+  white-space: nowrap;
+  z-index: 1;
+}

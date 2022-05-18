@@ -57,7 +57,7 @@ function Project({
             <p className="project-description">{desc}</p>
             <div className="pills-container">
               {tech.map((item) => {
-                return <Pill label={item} />;
+                return <Pill key={item} label={item} />;
               })}
             </div>
           </div>
