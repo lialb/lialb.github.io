@@ -28,16 +28,6 @@ export default function Navbar(): React.ReactElement {
         </ScrollLink>
         <ScrollLink
           activeClass="active"
-          to="skills"
-          spy={true}
-          smooth={true}
-          offset={0}
-          duration={500}
-        >
-          <Link cssID="dark-link">skills</Link>
-        </ScrollLink>
-        <ScrollLink
-          activeClass="active"
           to="more"
           spy={true}
           smooth={true}

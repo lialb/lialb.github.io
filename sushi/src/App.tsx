@@ -2,7 +2,6 @@ import React from "react";
 import About from "./components/pages/About";
 import Home from "./components/pages/Home";
 import Projects from "./components/pages/Projects";
-import Skills from "./components/pages/Skills";
 import Navbar from "./components/shared/Navbar";
 import More from "./components/pages/More";
 import Footer from "./components/shared/Footer";
@@ -33,9 +32,6 @@ export default function App(): React.ReactElement {
       </Element>
       <Element name="projects">
         <Projects />
-      </Element>
-      <Element name="skills">
-        <Skills />
       </Element>
       <Element name="more">
         <More />
