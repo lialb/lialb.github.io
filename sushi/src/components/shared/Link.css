@@ -1,5 +1,7 @@
 .link:hover .tooltip {
   display: block;
+  -webkit-animation: fadeIn 1s;
+  animation: fadeIn 1s;
 }
 
 .tooltip {
@@ -11,4 +13,21 @@
   position: absolute;
   white-space: nowrap;
   z-index: 1;
+}
+
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }

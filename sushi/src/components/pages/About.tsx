@@ -1,6 +1,7 @@
 import React from "react";
 import Portrait from "../../assets/albert.jpg";
 import Link from "../shared/Link";
+import { LinkType } from "../../customTypings/types";
 
 import "./About.css";
 
@@ -25,7 +26,11 @@ export default function About(): React.ReactElement {
             of <strong style={blue}>Illinois</strong> at
             <strong style={orange}> Urbana</strong>-
             <strong style={blue}>Champaign</strong> in{" "}
-            <Link href="https://cs.illinois.edu/" cssID="uiuc-cs">
+            <Link
+              href="https://cs.illinois.edu"
+              cssID="uiuc-cs"
+              linkType={LinkType.STRING}
+            >
               Computer Science
             </Link>{" "}
           </p>
@@ -44,7 +49,11 @@ export default function About(): React.ReactElement {
       </p>
       <p>
         I'll be joining{" "}
-        <Link href="https://stripe.com" cssID="stripe">
+        <Link
+          href="https://stripe.com"
+          cssID="stripe"
+          linkType={LinkType.STRING}
+        >
           Stripe
         </Link>{" "}
         as a Software Engineer later this year.
@@ -78,17 +87,26 @@ export default function About(): React.ReactElement {
           )}
           <li>
             <p>
-              <Link href="https://salesforce.com" cssID="salesforce">
+              <Link
+                href="https://salesforce.com"
+                cssID="salesforce"
+                linkType={LinkType.STRING}
+              >
                 Salesforce
               </Link>{" "}
               /
-              <Link href="https://tableau.com" cssID="tableau">
+              <Link
+                href="https://tableau.com"
+                cssID="tableau"
+                linkType={LinkType.STRING}
+              >
                 Tableau
               </Link>{" "}
               on the Runtime and VizPipeline team building out the Tableau{" "}
               <Link
                 href="https://tableau.github.io/extensions-api/docs/trex_tableau_viz.html"
                 cssID="tableau"
+                linkType={LinkType.STRING}
               >
                 Viz API
               </Link>
@@ -115,7 +133,11 @@ export default function About(): React.ReactElement {
         </ul>
         <p>
           I also helped teach{" "}
-          <Link href="https://cs196.cs.illinois.edu/" cssID="uiuc-cs">
+          <Link
+            href="https://cs196.cs.illinois.edu"
+            cssID="uiuc-cs"
+            linkType={LinkType.STRING}
+          >
             CS 196: Freshman Honors
           </Link>{" "}
           (PM, website, & grading) and CS 125: Intro to CS (Course Assistant)
@@ -137,7 +159,7 @@ function BulletPoint(
 
   return (
     <li>
-      <Link cssID={cssID} href={href}>
+      <Link cssID={cssID} href={href} linkType={LinkType.STRING}>
         {linkName}
       </Link>{" "}
       {content}

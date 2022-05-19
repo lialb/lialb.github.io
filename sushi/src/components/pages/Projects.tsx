@@ -3,6 +3,7 @@ import Tangram from "../../assets/tangram.png";
 import UIUCDiversity from "../../assets/I.png";
 import Pill from "../shared/Pill";
 import Title from "../shared/Title";
+import Link from "../shared/Link";
 
 import "./Projects.css";
 
@@ -49,9 +50,9 @@ function Project({
 }: ProjectProps): React.ReactElement {
   return (
     <div className="project">
-      <a href={link} target="_blank" rel="noopener noreferrer">
+      <Link href={link}>
         <div className="card">
-          <img src={image} alt="project image" className="project-picture" />
+          <img src={image} alt="project" className="project-picture" />
           <div className="card-container">
             <h3 className="project-title">{name}</h3>
             <p className="project-description">{desc}</p>
@@ -62,7 +63,7 @@ function Project({
             </div>
           </div>
         </div>
-      </a>
+      </Link>
     </div>
   );
 }

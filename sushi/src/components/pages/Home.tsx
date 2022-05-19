@@ -9,7 +9,7 @@ import "../../styles/Icons.css";
 export default function Home(): React.ReactElement {
   return (
     <div className="home-root">
-      <img className="boy-and-cat-drawing" src={Drawing} />
+      <img alt="boy-and-cat" className="boy-and-cat-drawing" src={Drawing} />
       <p className="home-title">hello, i am albert</p>
       <br />
       <div className="social-icons">

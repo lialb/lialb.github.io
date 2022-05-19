@@ -1,33 +1,44 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useEffect, useRef, useState } from "react";
+import useMouse from "@react-hook/mouse-position";
+import { LinkType } from "../../customTypings/types";
+
 import "./Link.css";
 
 type Props = {
   children: React.ReactNode;
   cssID?: string;
   href?: string;
+  linkType?: LinkType;
 };
+
+const Y_PADDING = 20;
+const X_PADDING = 10;
 
 export default function Link({
   children,
   cssID,
   href,
+  linkType,
 }: Props): React.ReactElement {
+  const tooltipRef = useRef(null);
+  const mouse = useMouse(tooltipRef, { enterDelay: 0, leaveDelay: 10 });
+
   const linkRef = useRef<HTMLAnchorElement>(null);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
   const getPosition = () => {
-    if (linkRef.current != null) {
-      const x = linkRef.current.offsetLeft;
-      setX(x);
-
-      const y = linkRef?.current.offsetTop;
-      setY(y);
+    if (linkRef.current == null) {
+      return;
     }
+
+    setX(linkRef.current.offsetLeft);
+    setY(linkRef.current.offsetTop);
   };
 
   useEffect(() => {
-    window.addEventListener("mousemove", getPosition);
+    getPosition();
+    window.addEventListener("resize", getPosition);
   }, []);
 
   if (href == null) {
@@ -36,16 +47,26 @@ export default function Link({
 
   return (
     <a
-      ref={linkRef}
+      ref={tooltipRef}
       className="link"
       href={href}
       id={cssID}
       rel="noopener noreferrer"
       target="_blank"
     >
-      <strong>{children}</strong>
-      <span className="tooltip" style={{ left: x + "px" }}>
-        {href.split("/")[2]}🡕
+      {linkType === LinkType.STRING ? (
+        <strong ref={linkRef}>{children}</strong>
+      ) : (
+        <span ref={linkRef}>{children}</span>
+      )}
+      <span
+        className="tooltip"
+        style={{
+          left: (mouse.x ?? 0) + x + X_PADDING + "px",
+          top: (mouse.y ?? 0) + y + Y_PADDING + "px",
+        }}
+      >
+        {href.split("//")[1]}&#129125;
       </span>
     </a>
   );
