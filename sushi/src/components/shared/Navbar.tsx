@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "./Link";
 import { Link as ScrollLink } from "react-scroll";
+import { LinkType } from "../../customTypings/types";
 
 export default function Navbar(): React.ReactElement {
   return (
@@ -36,7 +37,11 @@ export default function Navbar(): React.ReactElement {
         >
           <Link cssID="dark-link">more</Link>
         </ScrollLink>
-        <Link href="./Albert-Li-Resume.pdf" cssID="resume-link">
+        <Link
+          href="./Albert-Li-Resume.pdf"
+          cssID="resume-link"
+          linkType={LinkType.STRING}
+        >
           resume
         </Link>
       </div>
