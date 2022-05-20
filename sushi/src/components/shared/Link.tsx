@@ -21,14 +21,14 @@ export default function Link({
   linkType,
 }: Props): React.ReactElement {
   const tooltipRef = useRef(null);
-  const mouse = useMouse(tooltipRef, { enterDelay: 0, leaveDelay: 10 });
+  const mouse = useMouse(tooltipRef, { enterDelay: 0, leaveDelay: 0 });
 
   const linkRef = useRef<HTMLAnchorElement>(null);
   const [x, setX] = useState(0);
   const [y, setY] = useState(0);
 
   const getPosition = () => {
-    if (linkRef.current == null) {
+    if (linkRef?.current == null) {
       return;
     }
 
@@ -38,7 +38,7 @@ export default function Link({
 
   useEffect(() => {
     getPosition();
-    window.addEventListener("resize", getPosition);
+    window.addEventListener("mouseover", getPosition);
   }, []);
 
   if (href == null) {
