@@ -66,7 +66,7 @@ export default function Link({
           top: (mouse.y ?? 0) + y + Y_PADDING + "px",
         }}
       >
-        {href.split("//")[1]}&#129125;
+        {href.split("//")[1]}&#x2197;
       </span>
     </a>
   );
