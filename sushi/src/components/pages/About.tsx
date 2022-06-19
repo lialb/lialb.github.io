@@ -43,7 +43,7 @@ export default function About(): React.ReactElement {
   const description = (
     <>
       <p>
-        Hi, I'm Albert! I recently graduated from UIUC in Computer Science, with
+        Hi, I'm Albert! I previously studied Computer Science at UIUC, with
         a minor in Statistics and Burrito Studies. I like to build impactful,
         fast, and reliable stuff.
       </p>
@@ -125,7 +125,7 @@ export default function About(): React.ReactElement {
             "https://caterpillar.com"
           )}
           {BulletPoint(
-            "redesigning internal portals for PMs, Analysts, and executives",
+            "redesigning internal project management platforms for PMs, analysts, and executives",
             "Ameren",
             "ameren",
             "https://ameren.com"
