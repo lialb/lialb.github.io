@@ -43,12 +43,12 @@ export default function About(): React.ReactElement {
   const description = (
     <>
       <p>
-        Hi, I'm Albert! I previously studied Computer Science at UIUC, with
-        a minor in Statistics and Burrito Studies. I like to build impactful,
+        Hi, I'm Albert! I previously studied Computer Science at UIUC, with a
+        minor in Statistics and Burrito Studies. I like to build impactful,
         fast, and reliable stuff.
       </p>
       <p>
-        I'll be joining{" "}
+        I'm currently an engineer at{" "}
         <Link
           href="https://stripe.com"
           cssID="stripe"
@@ -56,7 +56,7 @@ export default function About(): React.ReactElement {
         >
           Stripe
         </Link>{" "}
-        as a Software Engineer later this year.
+        working on Buyer Experience.
       </p>
       <p>
         My experience has been around the whole stack, ranging from product to
