@@ -20,7 +20,7 @@ export default function About(): React.ReactElement {
       <div className="inner-text-container">
         <div className="inner-text">
           <h2>Hey 👋 I am:</h2>
-          <p>A (periodic) Software Engineer</p>
+          <p>A [periodic] Software Engineer</p>
           <p>
             A recent graduate of The <strong style={orange}>University </strong>
             of <strong style={blue}>Illinois</strong> at
@@ -43,12 +43,7 @@ export default function About(): React.ReactElement {
   const description = (
     <>
       <p>
-        Hi, I'm Albert! I previously studied Computer Science at UIUC, with a
-        minor in Statistics and Burrito Studies. I like to build impactful,
-        fast, and reliable stuff.
-      </p>
-      <p>
-        I'm currently an engineer at{" "}
+        Hi, I'm Albert! I'm currently an engineer at{" "}
         <Link
           href="https://stripe.com"
           cssID="stripe"
@@ -56,7 +51,12 @@ export default function About(): React.ReactElement {
         >
           Stripe
         </Link>{" "}
-        working on Buyer Experience.
+        working on Buyer Experience team.
+      </p>
+      <p>
+        I previously studied Computer Science at UIUC, with a minor in
+        Statistics and Burrito Studies. I like to build impactful, fast, and
+        reliable stuff.
       </p>
       <p>
         My experience has been around the whole stack, ranging from product to
@@ -71,7 +71,7 @@ export default function About(): React.ReactElement {
       <hr />
       <div className="centered about-text-container">
         {description}
-        <p>Formerly, I've worked at:</p>
+        <p>Formerly, I've been fortunate to be a part of:</p>
         <ul>
           {BulletPoint(
             "(backed by EQT Ventures, Accel, Salesforce Ventures, and others) building internal tooling and infra",
@@ -80,7 +80,7 @@ export default function About(): React.ReactElement {
             "https://airkit.com"
           )}
           {BulletPoint(
-            "on the Stories and Reels team creating new products (launching globally soon!)",
+            "(prior to being renamed Meta) on the Stories and Reels team creating new products (launching globally soon!)",
             "Facebook",
             "facebook",
             "https://meta.com"
