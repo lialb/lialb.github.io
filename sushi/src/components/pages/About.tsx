@@ -51,7 +51,7 @@ export default function About(): React.ReactElement {
         >
           Stripe
         </Link>{" "}
-        working on Buyer Experience team.
+        working on Buyer Experience.
       </p>
       <p>
         I previously studied Computer Science at UIUC, with a minor in
