@@ -51,15 +51,14 @@ export default function About(): React.ReactElement {
         >
           Stripe
         </Link>{" "}
-        working on Buyer Experience.
+        working on product and growth.
       </p>
       <p>
         I previously studied Computer Science at UIUC, with a minor in
-        Statistics and Burrito Studies. I like to build impactful, fast, and
-        reliable stuff.
+        Statistics and Burrito Studies.
       </p>
       <p>
-        My experience has been around the whole stack, ranging from product to
+        My experience has been around the whole stack, ranging from frontend to
         infra.
       </p>
     </>
@@ -80,7 +79,7 @@ export default function About(): React.ReactElement {
             "https://airkit.com"
           )}
           {BulletPoint(
-            "(prior to being renamed Meta) on the Stories and Reels team creating new products (launching globally soon!)",
+            "on the Stories and Reels team creating new products (launching globally soon!)",
             "Facebook",
             "facebook",
             "https://meta.com"
