@@ -2,7 +2,7 @@ import React from 'react';
 
 import 'src/components/pages/About.css';
 
-import Portrait from 'src/assets/albert.jpg';
+import Portrait from 'src/assets/albert.png';
 import Link from 'src/components/shared/Link';
 import { LinkType } from 'src/customTypings/types';
 
@@ -26,14 +26,7 @@ export default function About(): React.ReactElement {
             A recent graduate of The <strong style={orange}>University </strong>
             of <strong style={blue}>Illinois</strong> at
             <strong style={orange}> Urbana</strong>-
-            <strong style={blue}>Champaign</strong> in{' '}
-            <Link
-              href="https://cs.illinois.edu"
-              cssID="uiuc-cs"
-              linkType={LinkType.STRING}
-            >
-              Computer Science
-            </Link>{' '}
+            <strong style={blue}>Champaign</strong>
           </p>
           <p>Trying my best 💛</p>
         </div>
@@ -55,12 +48,95 @@ export default function About(): React.ReactElement {
         working on product and growth.
       </p>
       <p>
-        I previously studied Computer Science at UIUC, with a minor in
-        Statistics and Burrito Studies.
+        I previously studied{' '}
+        <Link
+          href="https://cs.illinois.edu"
+          cssID="uiuc-cs"
+          linkType={LinkType.STRING}
+        >
+          Computer Science
+        </Link>{' '}
+        at UIUC, with a minor in Statistics and Burrito Studies.
       </p>
       <p>
         My experience has been around the whole stack, ranging from frontend to
-        infra.
+        infra. I've been lucky enough to build products used by millions.
+      </p>
+    </>
+  );
+
+  const history = (
+    <>
+      <p>Formerly, I've been fortunate to be a part of:</p>
+      <ul>
+        {BulletPoint(
+          '(backed by EQT Ventures, Accel, and others) building internal tooling and infra',
+          'Airkit',
+          'airkit',
+          'https://airkit.com'
+        )}
+        {BulletPoint(
+          'on the Stories and Reels team creating the Reels web product',
+          'Facebook',
+          'facebook',
+          'https://meta.com'
+        )}
+        <li>
+          <p>
+            <Link
+              href="https://salesforce.com"
+              cssID="salesforce"
+              linkType={LinkType.STRING}
+            >
+              Salesforce
+            </Link>{' '}
+            /
+            <Link
+              href="https://tableau.com"
+              cssID="tableau"
+              linkType={LinkType.STRING}
+            >
+              Tableau
+            </Link>{' '}
+            on the Runtime and VizPipeline team building out the Tableau{' '}
+            <Link
+              href="https://tableau.github.io/extensions-api/docs/trex_tableau_viz.html"
+              cssID="tableau"
+              linkType={LinkType.STRING}
+            >
+              Viz API
+            </Link>
+          </p>
+        </li>
+        {BulletPoint(
+          'developing cloud services and products monitoring radio systems in real time',
+          'Motorola',
+          'motorola',
+          'https://motorolasolutions.com'
+        )}
+        {BulletPoint(
+          'creating a data extraction web platform for 1000s of engineers',
+          'Caterpillar',
+          'caterpillar',
+          'https://caterpillar.com'
+        )}
+        {BulletPoint(
+          'redesigning internal project management platforms for PMs, analysts, and executives',
+          'Ameren',
+          'ameren',
+          'https://ameren.com'
+        )}
+      </ul>
+      <p>
+        I also helped teach{' '}
+        <Link
+          href="https://cs196.cs.illinois.edu"
+          cssID="uiuc-cs"
+          linkType={LinkType.STRING}
+        >
+          CS 196: Freshman Honors
+        </Link>{' '}
+        (PM, website, & grading) and CS 125: Intro to CS (Course Assistant)
       </p>
     </>
   );
@@ -71,77 +147,7 @@ export default function About(): React.ReactElement {
       <hr />
       <div className="centered about-text-container">
         {description}
-        <p>Formerly, I've been fortunate to be a part of:</p>
-        <ul>
-          {BulletPoint(
-            '(backed by EQT Ventures, Accel, Salesforce Ventures, and others) building internal tooling and infra',
-            'Airkit',
-            'airkit',
-            'https://airkit.com'
-          )}
-          {BulletPoint(
-            'on the Stories and Reels team creating new products (launching globally soon!)',
-            'Facebook',
-            'facebook',
-            'https://meta.com'
-          )}
-          <li>
-            <p>
-              <Link
-                href="https://salesforce.com"
-                cssID="salesforce"
-                linkType={LinkType.STRING}
-              >
-                Salesforce
-              </Link>{' '}
-              /
-              <Link
-                href="https://tableau.com"
-                cssID="tableau"
-                linkType={LinkType.STRING}
-              >
-                Tableau
-              </Link>{' '}
-              on the Runtime and VizPipeline team building out the Tableau{' '}
-              <Link
-                href="https://tableau.github.io/extensions-api/docs/trex_tableau_viz.html"
-                cssID="tableau"
-                linkType={LinkType.STRING}
-              >
-                Viz API
-              </Link>
-            </p>
-          </li>
-          {BulletPoint(
-            'developing cloud backend services and products monitoring radio systems in real time',
-            'Motorola',
-            'motorola',
-            'https://motorolasolutions.com'
-          )}
-          {BulletPoint(
-            'creating a data extraction web platform for 1000s of engineers',
-            'Caterpillar',
-            'caterpillar',
-            'https://caterpillar.com'
-          )}
-          {BulletPoint(
-            'redesigning internal project management platforms for PMs, analysts, and executives',
-            'Ameren',
-            'ameren',
-            'https://ameren.com'
-          )}
-        </ul>
-        <p>
-          I also helped teach{' '}
-          <Link
-            href="https://cs196.cs.illinois.edu"
-            cssID="uiuc-cs"
-            linkType={LinkType.STRING}
-          >
-            CS 196: Freshman Honors
-          </Link>{' '}
-          (PM, website, & grading) and CS 125: Intro to CS (Course Assistant)
-        </p>
+        {history}
       </div>
     </div>
   );

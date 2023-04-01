@@ -14,7 +14,6 @@ import { Element } from 'react-scroll';
 
 import About from 'src/components/pages/About';
 import Home from 'src/components/pages/Home';
-import Projects from 'src/components/pages/Projects';
 import Navbar from 'src/components/shared/Navbar';
 import More from 'src/components/pages/More';
 import Footer from 'src/components/shared/Footer';
@@ -30,9 +29,6 @@ export default function App(): React.ReactElement {
       </Element>
       <Element name="about">
         <About />
-      </Element>
-      <Element name="projects">
-        <Projects />
       </Element>
       <Element name="more">
         <More />

@@ -1,8 +1,8 @@
 import React from 'react';
+import 'src/components/shared/Icons.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
-
-import 'src/components/shared/Icons.css';
 
 type Props = {
   iconSize:
@@ -30,7 +30,6 @@ export const IconTray = ({ iconSize, darkMode }: Props): React.ReactElement => {
 
   return (
     <div className="social-icons">
-      <br />
       <a href="mailto:albert.yiliang@gmail.com">
         <FontAwesomeIcon
           icon="envelope"

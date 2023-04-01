@@ -18,6 +18,7 @@
   color: var(--icon-secondary) !important;
 }
 
+/* Can't use flex and gap on the FaIcons */
 #github {
   padding-left: 20px;
   padding-right: 10px

@@ -1,7 +1,9 @@
 import React from 'react';
-import Link from './Link';
+
 import { Link as ScrollLink } from 'react-scroll';
 import { LinkType } from 'src/customTypings/types';
+
+import Link from 'src/components/shared/Link';
 
 export default function Navbar(): React.ReactElement {
   return (
@@ -16,16 +18,6 @@ export default function Navbar(): React.ReactElement {
           duration={500}
         >
           <Link cssID="dark-link">about</Link>
-        </ScrollLink>
-        <ScrollLink
-          activeClass="active"
-          to="projects"
-          spy={true}
-          smooth={true}
-          offset={-50}
-          duration={500}
-        >
-          <Link cssID="dark-link">projects</Link>
         </ScrollLink>
         <ScrollLink
           activeClass="active"
