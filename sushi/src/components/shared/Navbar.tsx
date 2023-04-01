@@ -1,7 +1,7 @@
-import React from "react";
-import Link from "./Link";
-import { Link as ScrollLink } from "react-scroll";
-import { LinkType } from "../../customTypings/types";
+import React from 'react';
+import Link from './Link';
+import { Link as ScrollLink } from 'react-scroll';
+import { LinkType } from 'src/customTypings/types';
 
 export default function Navbar(): React.ReactElement {
   return (

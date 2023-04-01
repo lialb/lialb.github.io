@@ -1,8 +1,9 @@
-import React from "react";
-import Cat from "../../assets/cat.jpg";
-import Title from "../shared/Title";
+import React from 'react';
 
-import "./More.css";
+import 'src/components/pages/More.css';
+
+import Cat from 'src/assets/cat.jpg';
+import Title from 'src/components/shared/Title';
 
 export default function More(): React.ReactElement {
   return (
@@ -15,7 +16,7 @@ export default function More(): React.ReactElement {
           rel="noopener noreferrer"
           target="_blank"
         >
-          {" "}
+          {' '}
           chess ♟️
         </a>
       </p>
@@ -29,7 +30,7 @@ export default function More(): React.ReactElement {
           src="https://stuff.mit.edu/cgi/counter/albearli"
           alt="counter"
           className="counter"
-        ></img>{" "}
+        ></img>{' '}
         &nbsp; times
       </p>
     </div>

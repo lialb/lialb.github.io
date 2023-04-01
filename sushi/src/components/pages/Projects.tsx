@@ -1,11 +1,12 @@
-import React from "react";
-import Tangram from "../../assets/tangram.png";
-import UIUCDiversity from "../../assets/I.png";
-import Pill from "../shared/Pill";
-import Title from "../shared/Title";
-import Link from "../shared/Link";
+import React from 'react';
 
-import "./Projects.css";
+import 'src/components/pages/Projects.css';
+
+import Tangram from 'src/assets/tangram.png';
+import UIUCDiversity from 'src/assets/I.png';
+import Pill from 'src/components/shared/Pill';
+import Title from 'src/components/shared/Title';
+import Link from 'src/components/shared/Link';
 
 export default function Projects(): React.ReactElement {
   return (
@@ -19,14 +20,14 @@ export default function Projects(): React.ReactElement {
           image={UIUCDiversity}
           link="https://lialbert.com/uiuc-diversity"
           name="UIUC Diversity"
-          tech={["Python", "D3.js", "Angular"]}
+          tech={['Python', 'D3.js', 'Angular']}
         />
         <Project
           desc="Tiktok, but 4 way swiping"
           image={Tangram}
           link="https://github.com/albearli/tangram"
           name="Tangram"
-          tech={["Flutter", "Python", "Go", "Neo4j", "MySQL"]}
+          tech={['Flutter', 'Python', 'Go', 'Neo4j', 'MySQL']}
         />
       </div>
     </div>
