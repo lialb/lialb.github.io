@@ -20,7 +20,7 @@ export default function More(): React.ReactElement {
           chess ♟️
         </a>
       </p>
-      <p>Big fan of fútbol ⚽ and basketball 🏀</p>
+      <p>Big fan of ⚽ and 🏀</p>
       <p>I actually use Vim and Arch (btw)</p>
       <p>I work hard so my cat (Samwise) can have a better life</p>
       <img className="cat-picture" src={Cat} width="30%" alt="Samwise Cat" />

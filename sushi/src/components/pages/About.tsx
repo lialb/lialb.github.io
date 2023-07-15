@@ -21,14 +21,9 @@ export default function About(): React.ReactElement {
       <div className="inner-text-container">
         <div className="inner-text">
           <h2>Hey 👋 I am:</h2>
-          <p>A [periodic] Software Engineer</p>
-          <p>
-            A recent graduate of The <strong style={orange}>University </strong>
-            of <strong style={blue}>Illinois</strong> at
-            <strong style={orange}> Urbana</strong>-
-            <strong style={blue}>Champaign</strong>
-          </p>
-          <p>Trying my best 💛</p>
+          <p>[periodically] a software engineer</p>
+          <p>usually napping, eating, and/or both</p>
+          <p>trying my best 💛</p>
         </div>
       </div>
     </div>
@@ -153,12 +148,12 @@ export default function About(): React.ReactElement {
   );
 }
 
-function BulletPoint(
+const BulletPoint = (
   content: string,
   linkName?: string,
   cssID?: string,
   href?: string
-): React.ReactElement {
+): React.ReactElement => {
   if (linkName == null || cssID == null || href == null) {
     return <li>{content}</li>;
   }
@@ -171,4 +166,4 @@ function BulletPoint(
       {content}
     </li>
   );
-}
+};
