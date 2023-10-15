@@ -1,6 +1,7 @@
 #!/bin/bash
 git checkout deploy
 git pull origin master
+git pull
 cd sushi
 npm run build
 cp -r build/ ..
