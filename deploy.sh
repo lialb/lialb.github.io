@@ -8,5 +8,5 @@ cd ..
 mv build docs
 git add .
 git commit -m "Deploy website"
-git push
+git push --force origin deploy
 git checkout -
