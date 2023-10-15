@@ -10,7 +10,7 @@ img {
 }
 
 hr {
-  width: 60%;
+  width: 45%;
 }
 
 .profile-picture {
@@ -40,8 +40,8 @@ hr {
 }
 
 .about-text-container {
-  padding-left: 22.5%;
-  padding-right: 22.5%;
+  padding-left: 30%;
+  padding-right: 30%;
 }
 
 @media (max-width: 630px) {

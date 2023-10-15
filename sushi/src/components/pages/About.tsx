@@ -7,9 +7,6 @@ import Link from 'src/components/shared/Link';
 import { LinkType } from 'src/customTypings/types';
 
 export default function About(): React.ReactElement {
-  const orange = { color: '#E84A27' };
-  const blue = { color: '#0455A4' };
-
   const header = (
     <div className="about-header">
       <img
@@ -20,7 +17,7 @@ export default function About(): React.ReactElement {
       />
       <div className="inner-text-container">
         <div className="inner-text">
-          <h2>Hey 👋 I am:</h2>
+          <h2>howdy 👋 I am:</h2>
           <p>[periodically] a software engineer</p>
           <p>usually napping, eating, and/or both</p>
           <p>trying my best 💛</p>
@@ -32,7 +29,7 @@ export default function About(): React.ReactElement {
   const description = (
     <>
       <p>
-        Hi, I'm Albert! I'm currently an engineer at{' '}
+        Hey, I'm Albert! I'm currently an engineer at{' '}
         <Link
           href="https://stripe.com"
           cssID="stripe"
@@ -40,7 +37,8 @@ export default function About(): React.ReactElement {
         >
           Stripe
         </Link>{' '}
-        working on product and growth.
+        working on product and growth. I help merchants adopt more payment
+        methods.
       </p>
       <p>
         I previously studied{' '}
@@ -53,10 +51,6 @@ export default function About(): React.ReactElement {
         </Link>{' '}
         at UIUC, with a minor in Statistics and Burrito Studies.
       </p>
-      <p>
-        My experience has been around the whole stack, ranging from frontend to
-        infra. I've been lucky enough to build products used by millions.
-      </p>
     </>
   );
 
@@ -65,10 +59,10 @@ export default function About(): React.ReactElement {
       <p>Formerly, I've been fortunate to be a part of:</p>
       <ul>
         {BulletPoint(
-          '(backed by EQT Ventures, Accel, and others) building internal tooling and infra',
-          'Airkit',
+          '(acquired by Salesforce) building internal tooling and infra',
+          'Airkit.ai',
           'airkit',
-          'https://airkit.com'
+          'https://airkit.ai'
         )}
         {BulletPoint(
           'on the Stories and Reels team creating the Reels web product',
@@ -110,13 +104,13 @@ export default function About(): React.ReactElement {
           'https://motorolasolutions.com'
         )}
         {BulletPoint(
-          'creating a data extraction web platform for 1000s of engineers',
+          'creating a data extraction platform for 1000s of engineers',
           'Caterpillar',
           'caterpillar',
           'https://caterpillar.com'
         )}
         {BulletPoint(
-          'redesigning internal project management platforms for PMs, analysts, and executives',
+          'revamping project management platforms for PMs, analysts, and executives',
           'Ameren',
           'ameren',
           'https://ameren.com'

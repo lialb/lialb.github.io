@@ -20,12 +20,12 @@ export default function More(): React.ReactElement {
           chess ♟️
         </a>
       </p>
-      <p>Big fan of ⚽ and 🏀</p>
-      <p>I actually use Vim and Arch (btw)</p>
+      <p>big fan of fc barcelona</p>
+      <p>I use vim and arch (btw)</p>
       <p>I work hard so my cat (Samwise) can have a better life</p>
       <img className="cat-picture" src={Cat} width="30%" alt="Samwise Cat" />
       <p className="counter-text">
-        This page has been viewed at least &nbsp;
+        this page has been viewed at least &nbsp;
         <img
           src="https://stuff.mit.edu/cgi/counter/albearli"
           alt="counter"
