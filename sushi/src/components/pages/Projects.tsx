@@ -25,7 +25,7 @@ export default function Projects(): React.ReactElement {
         <Project
           desc="Tiktok, but 4 way swiping"
           image={Tangram}
-          link="https://github.com/albearli/tangram"
+          link="https://github.com/lialb/tangram"
           name="Tangram"
           tech={['Flutter', 'Python', 'Go', 'Neo4j', 'MySQL']}
         />

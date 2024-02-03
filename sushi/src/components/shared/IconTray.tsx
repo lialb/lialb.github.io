@@ -38,7 +38,7 @@ export const IconTray = ({ iconSize, darkMode }: Props): React.ReactElement => {
         />
       </a>
       <a
-        href="https://github.com/albearli"
+        href="https://github.com/lialb"
         target="_blank"
         rel="noopener noreferrer"
       >
