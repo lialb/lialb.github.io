@@ -5,6 +5,7 @@ cd sushi
 npm run build
 cp -r build/ ..
 cd ..
+rm -r docs
 mv build docs
 git add .
 git commit -m "Deploy website"
