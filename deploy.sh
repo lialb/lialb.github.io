@@ -4,7 +4,7 @@ git pull origin master
 git pull
 cd sushi
 npm run build
-cp -r build/ ..
+cp -r build ..
 cd ..
 rm -r docs
 mv build docs
