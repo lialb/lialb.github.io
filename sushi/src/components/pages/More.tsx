@@ -1,27 +1,16 @@
-import React from 'react';
+import React from "react";
 
-import 'src/components/pages/More.css';
+import "src/components/pages/More.css";
 
-import Cat from 'src/assets/cat.jpg';
-import Title from 'src/components/shared/Title';
+import Cat from "src/assets/cat.jpg";
+import Title from "src/components/shared/Title";
 
 export default function More(): React.ReactElement {
   return (
     <div className="more-root">
-      <Title>Other Stuff</Title>
-      <p>
-        I like
-        <a
-          href="https://lichess.org/@/Albear"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          {' '}
-          chess ♟️
-        </a>
-      </p>
-      <p>big fan of fc barcelona</p>
-      <p>I use vim and arch (btw)</p>
+      <Title>other stuff</Title>
+      <p>I like chess and poker </p>
+      <p>big fan of liverpool</p>
       <p>I work hard so my cat (Samwise) can have a better life</p>
       <img className="cat-picture" src={Cat} width="30%" alt="Samwise Cat" />
       <p className="counter-text">
@@ -30,7 +19,7 @@ export default function More(): React.ReactElement {
           src="https://stuff.mit.edu/cgi/counter/albearli"
           alt="counter"
           className="counter"
-        ></img>{' '}
+        ></img>{" "}
         &nbsp; times
       </p>
     </div>

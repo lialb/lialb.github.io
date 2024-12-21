@@ -1,10 +1,60 @@
-import React from 'react';
+import React from "react";
 
-import 'src/components/pages/About.css';
+import "src/components/pages/About.css";
 
-import Portrait from 'src/assets/albert.png';
-import Link from 'src/components/shared/Link';
-import { LinkType } from 'src/customTypings/types';
+import Portrait from "src/assets/albert.png";
+import Link from "src/components/shared/Link";
+import { LinkType } from "src/customTypings/types";
+import EnglishList from "../shared/EnglishList";
+
+const WORK_HISTORY = [
+  {
+    company: "airkit.ai",
+    content: "building internal tooling and infra",
+    href: "https://airkit.ai",
+    cssID: "airkit",
+  },
+  {
+    company: "facebook",
+    content: "on the Stories and Reels team creating Reels on web",
+    href: "https://meta.com",
+    cssID: "facebook",
+  },
+  {
+    company: "salesforce",
+    content:
+      "on the Runtime and VizPipeline team building out the Tableau Viz API",
+    href: "https://salesforce.com",
+    cssID: "salesforce",
+  },
+  {
+    company: "tableau",
+    content:
+      "on the Runtime and VizPipeline team building out the Tableau Viz API",
+    href: "https://tableau.com",
+    cssID: "tableau",
+  },
+  {
+    company: "motorola",
+    content:
+      "developing cloud services and products monitoring radio systems in real time",
+    href: "https://motorolasolutions.com",
+    cssID: "motorola",
+  },
+  {
+    company: "caterpillar",
+    content: "creating a data extraction platform for 1000s of engineers",
+    href: "https://caterpillar.com",
+    cssID: "caterpillar",
+  },
+  {
+    company: "ameren",
+    content:
+      "revamping project management platforms for PMs, analysts, and executives",
+    href: "https://ameren.com",
+    cssID: "ameren",
+  },
+];
 
 export default function About(): React.ReactElement {
   const header = (
@@ -29,103 +79,43 @@ export default function About(): React.ReactElement {
   const description = (
     <>
       <p>
-        Hey, I'm Albert! I'm currently an engineer at{' '}
+        Hey, I'm Albert! I'm currently an engineer at{" "}
         <Link
           href="https://stripe.com"
           cssID="stripe"
           linkType={LinkType.STRING}
         >
-          Stripe
-        </Link>{' '}
-        working on product and growth. I help merchants adopt more payment
-        methods.
+          stripe
+        </Link>{" "}
+        working on product and growth on payment methods.
       </p>
       <p>
-        I previously studied{' '}
+        I previously studied computer science at{" "}
         <Link
           href="https://cs.illinois.edu"
           cssID="uiuc-cs"
           linkType={LinkType.STRING}
         >
-          Computer Science
-        </Link>{' '}
-        at UIUC, with a minor in Statistics and Burrito Studies.
+          UIUC
+        </Link>
+        , with a minor in Statistics.
       </p>
     </>
   );
 
   const history = (
     <>
-      <p>Formerly, I've been fortunate to be a part of:</p>
-      <ul>
-        {BulletPoint(
-          '(acquired by Salesforce) building internal tooling and infra',
-          'Airkit.ai',
-          'airkit',
-          'https://airkit.ai'
-        )}
-        {BulletPoint(
-          'on the Stories and Reels team creating the Reels web product',
-          'Facebook',
-          'facebook',
-          'https://meta.com'
-        )}
-        <li>
-          <p>
-            <Link
-              href="https://salesforce.com"
-              cssID="salesforce"
-              linkType={LinkType.STRING}
-            >
-              Salesforce
-            </Link>{' '}
-            /
-            <Link
-              href="https://tableau.com"
-              cssID="tableau"
-              linkType={LinkType.STRING}
-            >
-              Tableau
-            </Link>{' '}
-            on the Runtime and VizPipeline team building out the Tableau{' '}
-            <Link
-              href="https://tableau.github.io/extensions-api/docs/trex_tableau_viz.html"
-              cssID="tableau"
-              linkType={LinkType.STRING}
-            >
-              Viz API
-            </Link>
-          </p>
-        </li>
-        {BulletPoint(
-          'developing cloud services and products monitoring radio systems in real time',
-          'Motorola',
-          'motorola',
-          'https://motorolasolutions.com'
-        )}
-        {BulletPoint(
-          'creating a data extraction platform for 1000s of engineers',
-          'Caterpillar',
-          'caterpillar',
-          'https://caterpillar.com'
-        )}
-        {BulletPoint(
-          'revamping project management platforms for PMs, analysts, and executives',
-          'Ameren',
-          'ameren',
-          'https://ameren.com'
-        )}
-      </ul>
       <p>
-        I also helped teach{' '}
-        <Link
-          href="https://cs196.cs.illinois.edu"
-          cssID="uiuc-cs"
-          linkType={LinkType.STRING}
-        >
-          CS 196: Freshman Honors
-        </Link>{' '}
-        (PM, website, & grading) and CS 125: Intro to CS (Course Assistant)
+        Formerly, I've been fortunate to be a part of: <br />
+        <EnglishList
+          items={WORK_HISTORY.map(({ company, href, cssID }) => (
+            <span key={company}>
+              <Link href={href} cssID={cssID} linkType={LinkType.STRING}>
+                {company}
+              </Link>
+            </span>
+          ))}
+        />
       </p>
     </>
   );
@@ -142,12 +132,17 @@ export default function About(): React.ReactElement {
   );
 }
 
-const BulletPoint = (
-  content: string,
-  linkName?: string,
-  cssID?: string,
-  href?: string
-): React.ReactElement => {
+const BulletPoint = ({
+  content,
+  linkName,
+  cssID,
+  href,
+}: {
+  content: string;
+  linkName?: string;
+  cssID?: string;
+  href?: string;
+}): React.ReactElement => {
   if (linkName == null || cssID == null || href == null) {
     return <li>{content}</li>;
   }
@@ -156,7 +151,7 @@ const BulletPoint = (
     <li>
       <Link cssID={cssID} href={href} linkType={LinkType.STRING}>
         {linkName}
-      </Link>{' '}
+      </Link>{" "}
       {content}
     </li>
   );
