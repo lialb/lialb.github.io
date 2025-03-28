@@ -9,6 +9,12 @@ import EnglishList from "../shared/EnglishList";
 
 const WORK_HISTORY = [
   {
+    company: "stripe",
+    content: "working on product and growth on payment methods.",
+    href: "https://stripe.com",
+    cssID: "stripe",
+  },
+  {
     company: "airkit.ai",
     content: "building internal tooling and infra",
     href: "https://airkit.ai",
@@ -81,24 +87,36 @@ export default function About(): React.ReactElement {
       <p>
         Hey, I'm Albert! I'm currently an engineer at{" "}
         <Link
-          href="https://stripe.com"
-          cssID="stripe"
+          href="https://runloop.ai"
+          cssID="runloop"
           linkType={LinkType.STRING}
         >
-          stripe
-        </Link>{" "}
-        working on product and growth on payment methods.
+          runloop ai
+        </Link>
+        {", "}
+        building a platform for building AI agents.
+        <p>
+          Before that, I was at{" "}
+          <Link
+            href="https://stripe.com"
+            cssID="stripe"
+            linkType={LinkType.STRING}
+          >
+            stripe
+          </Link>
+          , where I worked on product and growth on payment methods.
+        </p>
       </p>
       <p>
-        I previously studied computer science at{" "}
+        I studied computer science at{" "}
         <Link
           href="https://cs.illinois.edu"
           cssID="uiuc-cs"
           linkType={LinkType.STRING}
         >
           UIUC
-        </Link>
-        , with a minor in Statistics.
+        </Link>{" "}
+        with a minor in Statistics.
       </p>
     </>
   );
@@ -106,7 +124,7 @@ export default function About(): React.ReactElement {
   const history = (
     <>
       <p>
-        Formerly, I've been fortunate to be a part of: <br />
+        I've been fortunate to be a part of: <br />
         <EnglishList
           items={WORK_HISTORY.map(({ company, href, cssID }) => (
             <span key={company}>
