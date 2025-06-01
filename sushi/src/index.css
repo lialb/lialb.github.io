@@ -21,6 +21,8 @@ code {
   --icon-secondary: #c0c0c0;
   --uiuc-orange: #e84a27;
   --uiuc-orange-secondary: rgba(232, 74, 39, 0.15);
+  --dark-link: rgb(23, 42, 69);
+  --dark-link-highlight: rgba(23, 42, 69, 0.15);
 
   /* Company colors */
   --runloop: #118362;
@@ -41,14 +43,4 @@ code {
   --caterpillar-highlight: rgba(213, 182, 10, 0.15);
   --ameren: #35962b;
   --ameren-highlight: rgba(53, 150, 43, 0.15);
-
-  /* Pastels */
-  --pastel-primary: #defcf9;
-  --pastel-primary-highlight: rgba(222, 252, 249, 0.15);
-  --pastel-secondary: #cadefc;
-  --pastel-secondary-highlight: rgba(202, 222, 252, 0.15);
-  --pastel-tertiary: #c3bef0;
-  --pastel-teritary-highlight: rgba(195, 190, 240, 0.15);
-  --pastel-quaternary: #cca8e9;
-  --pastel-quaternary-highlight: rgba(204, 168, 233, 0.15);
 }

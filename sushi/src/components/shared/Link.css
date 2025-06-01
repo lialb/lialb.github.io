@@ -1,3 +1,26 @@
+.link {
+  position: relative;
+  text-decoration: none;
+  color: inherit;
+}
+
+.link::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0;
+  height: 100%;
+  transition: width 0.4s ease;
+  z-index: -1;
+  border-radius: 4px;
+}
+
+.link:hover::before {
+  width: 100%;
+}
+
+/* Tooltip styles */
 .link:hover .tooltip {
   display: block;
   -webkit-animation: fadeIn 1s;
@@ -13,6 +36,7 @@
   position: absolute;
   white-space: nowrap;
   z-index: 1;
+  border-radius: 4px;
 }
 
 @-webkit-keyframes fadeIn {
@@ -23,6 +47,7 @@
     opacity: 1;
   }
 }
+
 @keyframes fadeIn {
   from {
     opacity: 0;

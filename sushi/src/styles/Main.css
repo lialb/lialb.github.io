@@ -55,102 +55,47 @@ li {
   padding: 1px 4px;
 }
 
-#Python {
-  background-color: var(--facebook-highlight);
-  color: var(--facebook);
-}
-
-#Angular {
-  background-color: rgba(181, 46, 49, 0.15);
-  color: rgb(181, 46, 49);
-}
-
-#D3 {
-  background-color: var(--caterpillar-highlight);
-  color: var(--caterpillar);
-}
-
-#Flutter {
-  background-color: var(--tableau-highlight);
-  color: var(--tableau);
-}
-
-#Go {
-  background-color: var(--salesforce-highlight);
-  color: var(--salesforce);
-}
-
-#Neo4j {
-  background-color: var(--ameren-highlight);
-  color: var(--ameren);
-}
-
-#MySQL {
-  background-color: var(--motorola-highlight);
-  color: var(--motorola);
-}
+/*
+ * Somewhat standard link styles
+ */
 
 #dark-link {
-  border-bottom: 2px solid var(--icon-main);
+  border-bottom: 2px solid var(--dark-link);
   padding-left: 2px;
   padding-right: 2px;
 }
-
+#dark-link::before {
+  background-color: var(--dark-link-highlight);
+}
 #dark-link:hover {
-  background-color: var(--icon-secondary);
   border-bottom: none;
   border-radius: 4px;
-  color: var(--icon-main);
+  color: var(--dark-link);
 }
 
-#primary-link {
-  border-bottom: 2px solid var(--pastel-primary);
+#resume-link {
+  border-bottom: 2px solid var(--uiuc-orange);
 }
-
-#primary-link:hover {
-  background-color: var(--pastel-primary-highlight);
+#resume-link::before {
+  background-color: var(--uiuc-orange-secondary);
+}
+#resume-link:hover {
   border-bottom: none;
   border-radius: 4px;
-  color: var(--pastel-primary);
+  color: var(--uiuc-orange);
 }
 
-#secondary-link {
-  border-bottom: 2px solid var(--pastel-secondary);
-}
-
-#secondary-link:hover {
-  background-color: var(--pastel-secondary-highlight);
-  border-bottom: none;
-  border-radius: 4px;
-  color: var(--pastel-secondary);
-}
-
-#tertiary-link {
-  border-bottom: 2px solid var(--pastel-tertiary);
-}
-
-#tertiary-link:hover {
-  background-color: var(--pastel-tertiary-highlight);
-  border-bottom: none;
-  border-radius: 4px;
-  color: var(--pastel-tertiary);
-}
-
-#quaternary-link {
-  border-bottom: 2px solid var(--pastel-quaternary);
-}
-
-#quaternary-link:hover {
-  background-color: var(--pastel-quaternary-highlight);
-  color: var(--pastel-quaternary);
-}
+/* 
+ * Company link styles 
+ */
 
 #stripe {
   border-bottom: 2px solid var(--stripe);
 }
-
-#stripe:hover {
+#stripe::before {
   background-color: var(--stripe-highlight);
+}
+#stripe:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--stripe);
@@ -159,9 +104,10 @@ li {
 #airkit {
   border-bottom: 2px solid var(--airkit);
 }
-
-#airkit:hover {
+#airkit::before {
   background-color: var(--airkit-highlight);
+}
+#airkit:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--airkit);
@@ -170,9 +116,10 @@ li {
 #facebook {
   border-bottom: 2px solid var(--facebook);
 }
-
-#facebook:hover {
+#facebook::before {
   background-color: var(--facebook-highlight);
+}
+#facebook:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--facebook);
@@ -181,9 +128,10 @@ li {
 #tableau {
   border-bottom: 2px solid var(--tableau);
 }
-
-#tableau:hover {
+#tableau::before {
   background-color: var(--tableau-highlight);
+}
+#tableau:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--tableau);
@@ -192,9 +140,10 @@ li {
 #salesforce {
   border-bottom: 2px solid var(--salesforce);
 }
-
-#salesforce:hover {
+#salesforce::before {
   background-color: var(--salesforce-highlight);
+}
+#salesforce:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--salesforce);
@@ -203,9 +152,10 @@ li {
 #motorola {
   border-bottom: 2px solid var(--motorola);
 }
-
-#motorola:hover {
+#motorola::before {
   background-color: var(--motorola-highlight);
+}
+#motorola:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--motorola);
@@ -214,9 +164,10 @@ li {
 #caterpillar {
   border-bottom: 2px solid var(--caterpillar);
 }
-
-#caterpillar:hover {
+#caterpillar::before {
   background-color: var(--caterpillar-highlight);
+}
+#caterpillar:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--caterpillar);
@@ -225,9 +176,10 @@ li {
 #ameren {
   border-bottom: 2px solid var(--ameren);
 }
-
-#ameren:hover {
+#ameren::before {
   background-color: var(--ameren-highlight);
+}
+#ameren:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--ameren);
@@ -236,20 +188,10 @@ li {
 #uiuc-cs {
   border-bottom: 2px solid var(--uiuc-orange);
 }
-
+#uiuc-cs::before {
+  background-color: var(--uiuc-orange-secondary);
+}
 #uiuc-cs:hover {
-  background-color: var(--uiuc-orange-secondary);
-  border-bottom: none;
-  border-radius: 4px;
-  color: var(--uiuc-orange);
-}
-
-#resume-link {
-  border-bottom: 2px solid var(--uiuc-orange);
-}
-
-#resume-link:hover {
-  background-color: var(--uiuc-orange-secondary);
   border-bottom: none;
   border-radius: 4px;
   color: var(--uiuc-orange);
@@ -258,9 +200,10 @@ li {
 #runloop {
   border-bottom: 2px solid var(--runloop);
 }
-
-#runloop:hover {
+#runloop::before {
   background-color: var(--runloop-highlight);
+}
+#runloop:hover {
   border-bottom: none;
   border-radius: 4px;
   color: var(--runloop);

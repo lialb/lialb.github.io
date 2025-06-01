@@ -9,52 +9,52 @@ import EnglishList from "../shared/EnglishList";
 
 const WORK_HISTORY = [
   {
-    company: "stripe",
+    company: "Stripe",
     content: "working on product and growth on payment methods.",
     href: "https://stripe.com",
     cssID: "stripe",
   },
   {
-    company: "airkit.ai",
+    company: "Airkit.ai",
     content: "building internal tooling and infra",
     href: "https://airkit.ai",
     cssID: "airkit",
   },
   {
-    company: "facebook",
+    company: "Facebook",
     content: "on the Stories and Reels team creating Reels on web",
     href: "https://meta.com",
     cssID: "facebook",
   },
   {
-    company: "salesforce",
+    company: "Salesforce",
     content:
       "on the Runtime and VizPipeline team building out the Tableau Viz API",
     href: "https://salesforce.com",
     cssID: "salesforce",
   },
   {
-    company: "tableau",
+    company: "Tableau",
     content:
       "on the Runtime and VizPipeline team building out the Tableau Viz API",
     href: "https://tableau.com",
     cssID: "tableau",
   },
   {
-    company: "motorola",
+    company: "Motorola",
     content:
       "developing cloud services and products monitoring radio systems in real time",
     href: "https://motorolasolutions.com",
     cssID: "motorola",
   },
   {
-    company: "caterpillar",
+    company: "Caterpillar",
     content: "creating a data extraction platform for 1000s of engineers",
     href: "https://caterpillar.com",
     cssID: "caterpillar",
   },
   {
-    company: "ameren",
+    company: "Ameren",
     content:
       "revamping project management platforms for PMs, analysts, and executives",
     href: "https://ameren.com",
@@ -91,24 +91,24 @@ export default function About(): React.ReactElement {
           cssID="runloop"
           linkType={LinkType.STRING}
         >
-          runloop ai
+          Runloop AI
         </Link>
         {", "}
-        building a platform for building AI agents.
+        building a platform for developing AI agents.
         <p>
-          Before that, I was at{" "}
+          Previously, I was at{" "}
           <Link
             href="https://stripe.com"
             cssID="stripe"
             linkType={LinkType.STRING}
           >
-            stripe
+            Stripe
           </Link>
           , where I worked on product and growth on payment methods.
         </p>
       </p>
       <p>
-        I studied computer science at{" "}
+        I received my B.S. in Computer Science at{" "}
         <Link
           href="https://cs.illinois.edu"
           cssID="uiuc-cs"
@@ -116,7 +116,8 @@ export default function About(): React.ReactElement {
         >
           UIUC
         </Link>{" "}
-        with a minor in Statistics.
+        with a minor in Statistics. Then I dropped out of my master's (sorry
+        mom).
       </p>
     </>
   );

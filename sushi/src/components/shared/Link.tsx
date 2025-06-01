@@ -1,14 +1,14 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState } from "react";
 
-import 'src/components/shared/Link.css';
+import "src/components/shared/Link.css";
 
-import useMouse from '@react-hook/mouse-position';
-import { LinkType } from 'src/customTypings/types';
+import useMouse from "@react-hook/mouse-position";
+import { LinkType } from "src/customTypings/types";
 
 const Y_PADDING = 20;
 const X_PADDING = 10;
 
-const removeHttpFromUrl = (link: string) => link.split('//')[1];
+const removeHttpFromUrl = (link: string) => link.split("//")[1];
 
 type Props = {
   children: React.ReactNode;
@@ -41,11 +41,15 @@ export default function Link({
 
   useEffect(() => {
     getPosition();
-    window.addEventListener('mouseover', getPosition);
+    window.addEventListener("mouseover", getPosition);
   }, []);
 
   if (href == null) {
-    return <strong id={cssID}>{children}</strong>;
+    return (
+      <strong id={cssID} className="link">
+        {children}
+      </strong>
+    );
   }
 
   return (
@@ -65,8 +69,8 @@ export default function Link({
       <span
         className="tooltip"
         style={{
-          left: (mouse.x ?? 0) + x + X_PADDING + 'px',
-          top: (mouse.y ?? 0) + y + Y_PADDING + 'px',
+          left: (mouse.x ?? 0) + x + X_PADDING + "px",
+          top: (mouse.y ?? 0) + y + Y_PADDING + "px",
         }}
       >
         {removeHttpFromUrl(href)}&#x2197;
