@@ -1,31 +1,31 @@
-import React from 'react';
-import 'src/components/shared/Icons.css';
+import React from "react";
+import "src/components/shared/Icons.css";
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import classNames from 'classnames';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import classNames from "classnames";
 
 type Props = {
   iconSize:
-    | 'xs'
-    | 'lg'
-    | 'sm'
-    | '1x'
-    | '2x'
-    | '3x'
-    | '4x'
-    | '5x'
-    | '6x'
-    | '7x'
-    | '8x'
-    | '9x'
-    | '10x';
+    | "xs"
+    | "lg"
+    | "sm"
+    | "1x"
+    | "2x"
+    | "3x"
+    | "4x"
+    | "5x"
+    | "6x"
+    | "7x"
+    | "8x"
+    | "9x"
+    | "10x";
   darkMode: boolean;
 };
 
 export const IconTray = ({ iconSize, darkMode }: Props): React.ReactElement => {
   const iconClassName = classNames(
-    { 'social-icon-dark': !darkMode },
-    { 'social-icon-light': darkMode }
+    { "social-icon-dark": !darkMode },
+    { "social-icon-light": darkMode }
   );
 
   return (
@@ -38,24 +38,12 @@ export const IconTray = ({ iconSize, darkMode }: Props): React.ReactElement => {
         />
       </a>
       <a
-        href="https://github.com/lialb"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <FontAwesomeIcon
-          icon={['fab', 'github']}
-          id="github"
-          className={iconClassName}
-          size={iconSize}
-        />
-      </a>
-      <a
         href="https://www.linkedin.com/in/albs/"
         target="_blank"
         rel="noopener noreferrer"
       >
         <FontAwesomeIcon
-          icon={['fab', 'linkedin']}
+          icon={["fab", "linkedin"]}
           id="linkedin"
           className={iconClassName}
           size={iconSize}

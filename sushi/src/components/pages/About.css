@@ -10,7 +10,9 @@ img {
 }
 
 hr {
-  width: 45%;
+  width: calc(100% - 40px);
+  max-width: 700px;
+  margin: auto;
 }
 
 .profile-picture {
@@ -76,7 +78,9 @@ hr {
   }
 
   hr {
-    width: 75%;
+    width: calc(100% - 25%);
+    max-width: 700px;
+    margin: 2% auto;
   }
 }
 
