@@ -1,4 +1,7 @@
 #!/bin/bash
+set -e
+
+previous_branch=$(git branch --show-current)
 
 # Switch to deploy branch
 git checkout deploy
@@ -11,25 +14,21 @@ cd sushi
 npm run build
 cd ..
 
-# Check if docs exists and remove it appropriately
-if [ -d docs ]; then
-    rm -rf docs   # Remove if it's a directory
-elif [ -f docs ]; then
-    rm docs       # Remove if it's a file
-fi
+# Remove previous build output
+rm -rf docs
 
 # Replace docs directory with new build
 mv sushi/build docs
 
 # Copy CNAME file if it exists
-[ -f CNAME ] && cp CNAME docs
+[ -f CNAME ] && cp CNAME docs/
 
 # Commit and push changes
-git add .
-git commit -m "Deploy website"
+git add docs
+git commit -m "Deploy website" || echo "No deploy changes to commit"
 git push --force origin deploy
 
 # Return to previous branch
-git checkout -
+git checkout "$previous_branch"
 
 echo "Deployment complete!"

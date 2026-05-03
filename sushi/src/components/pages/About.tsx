@@ -1,13 +1,18 @@
 import React from "react";
 
-import "src/components/pages/About.css";
-
-import Portrait from "src/assets/albert.png";
+import Portrait from "src/assets/albert.jpg";
 import Link from "src/components/shared/Link";
+import Typography from "src/components/shared/Typography";
 import { LinkType } from "src/customTypings/types";
 import EnglishList from "../shared/EnglishList";
 
 const WORK_HISTORY = [
+  {
+    company: "Runloop",
+    content: "building a platform for AI agents.",
+    href: "https://runloop.ai",
+    cssID: "runloop",
+  },
   {
     company: "Stripe",
     content: "working on product and growth on payment methods.",
@@ -64,19 +69,26 @@ const WORK_HISTORY = [
 
 export default function About(): React.ReactElement {
   const header = (
-    <div className="about-header">
+    <div className="flex justify-center px-[15%] pt-[5%] max-[630px]:block max-[630px]:h-full max-[630px]:px-0">
       <img
-        className="profile-picture"
+        className="w-1/4 max-w-[230px] rounded-full object-scale-down py-[2%] max-[1000px]:w-[40%] max-[800px]:w-[60%] max-[630px]:mx-auto"
         src={Portrait}
-        width="30%"
         alt="Albert"
       />
-      <div className="inner-text-container">
-        <div className="inner-text">
-          <h2>howdy 👋 I am:</h2>
-          <p>[periodically] a software engineer</p>
-          <p>usually napping, eating, and/or both</p>
-          <p>trying my best 💛</p>
+      <div className="pl-[4%] max-[630px]:px-[15%]">
+        <div className="relative top-1/2 flex -translate-y-1/2 flex-col gap-2 text-left max-[630px]:top-0 max-[630px]:translate-y-0 max-[630px]:text-center">
+          <Typography variant="heading" className="mb-0">
+            howdy 👋 I am:
+          </Typography>
+          <Typography variant="body" className="mb-0">
+            a software engineer based in SF
+          </Typography>
+          <Typography variant="body" className="mb-0">
+            usually napping, eating, and/or both
+          </Typography>
+          <Typography variant="body" className="mb-0">
+            trying my best 💛
+          </Typography>
         </div>
       </div>
     </div>
@@ -84,30 +96,33 @@ export default function About(): React.ReactElement {
 
   const description = (
     <>
-      <p>
-        Hey, I'm Albert! I'm currently an engineer at{" "}
+      <Typography variant="body">
+        Hey, I'm Albert! I'm currently an engineer building continual learning.
+      </Typography>
+      <Typography variant="body">
+        Previously, I was at{" "}
+        <Link
+          href="https://stripe.com"
+          cssID="stripe"
+          linkType={LinkType.STRING}
+        >
+          Stripe
+        </Link>{" "}
+        working on product and growth on payment methods, buyer experience, and
+        adaptive pricing.
+      </Typography>
+      <Typography variant="body">
+        I also was eng #7 at{" "}
         <Link
           href="https://runloop.ai"
           cssID="runloop"
           linkType={LinkType.STRING}
         >
-          Runloop AI
-        </Link>
-        {", "}
-        building a platform for developing AI agents.
-        <p>
-          Previously, I was at{" "}
-          <Link
-            href="https://stripe.com"
-            cssID="stripe"
-            linkType={LinkType.STRING}
-          >
-            Stripe
-          </Link>
-          , where I worked on product and growth on payment methods.
-        </p>
-      </p>
-      <p>
+          Runloop
+        </Link>{" "}
+        where I built a platform and infrastructure for AI agents.
+      </Typography>
+      <Typography variant="body">
         I received my B.S. in Computer Science at{" "}
         <Link
           href="https://cs.illinois.edu"
@@ -118,13 +133,13 @@ export default function About(): React.ReactElement {
         </Link>{" "}
         with a minor in Statistics. Then I dropped out of my master's (sorry
         mom).
-      </p>
+      </Typography>
     </>
   );
 
   const history = (
     <>
-      <p>
+      <Typography variant="body">
         I've been fortunate to be a part of: <br />
         <EnglishList
           items={WORK_HISTORY.map(({ company, href, cssID }) => (
@@ -135,43 +150,30 @@ export default function About(): React.ReactElement {
             </span>
           ))}
         />
-      </p>
+      </Typography>
+      <br />
+      <Typography variant="body">
+        Connect with me on{" "}
+        <Link
+          href="https://linkedin.com/in/albs"
+          cssID="linkedin-contact"
+          linkType={LinkType.STRING}
+        >
+          LinkedIn
+        </Link>
+        {" or albert[dot]yiliang[at]gmail[dot]com"}
+      </Typography>
     </>
   );
 
   return (
-    <div className="about-root">
+    <div className="pb-[3%] text-center">
       {header}
-      <hr />
-      <div className="centered about-text-container">
+      <hr className="mx-auto mb-8 mt-0 w-[calc(100%-40px)] max-w-[700px] max-[630px]:mx-auto max-[630px]:mb-8 max-[630px]:mt-[2%] max-[630px]:w-[calc(100%-25%)] max-[630px]:max-w-[700px]" />
+      <div className="mx-auto max-w-[700px] px-5 text-left max-[630px]:px-[12.5%] max-[800px]:[&_p]:text-base">
         {description}
         {history}
       </div>
     </div>
   );
 }
-
-const BulletPoint = ({
-  content,
-  linkName,
-  cssID,
-  href,
-}: {
-  content: string;
-  linkName?: string;
-  cssID?: string;
-  href?: string;
-}): React.ReactElement => {
-  if (linkName == null || cssID == null || href == null) {
-    return <li>{content}</li>;
-  }
-
-  return (
-    <li>
-      <Link cssID={cssID} href={href} linkType={LinkType.STRING}>
-        {linkName}
-      </Link>{" "}
-      {content}
-    </li>
-  );
-};
