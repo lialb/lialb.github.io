@@ -1,14 +1,13 @@
 import React from "react";
 
 import { Link as ScrollLink } from "react-scroll";
-import { LinkType } from "src/customTypings/types";
 
 import Link from "src/components/shared/Link";
 
 export default function Navbar(): React.ReactElement {
   return (
-    <div className="navbar-root">
-      <div className="navbar-right-container">
+    <div className="absolute left-0 right-0 top-0 z-[1] flex items-center px-8 py-4">
+      <div className="ml-auto [&>*]:ml-[12.5px] [&>*]:cursor-pointer [&>*:first-child]:ml-0">
         <ScrollLink
           activeClass="active"
           to="about"
@@ -29,13 +28,6 @@ export default function Navbar(): React.ReactElement {
         >
           <Link cssID="dark-link">more</Link>
         </ScrollLink>
-        <Link
-          href="./Albert-Li-Resume.pdf"
-          cssID="resume-link"
-          linkType={LinkType.STRING}
-        >
-          resume
-        </Link>
       </div>
     </div>
   );
